@@ -1,13 +1,40 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="84" x="-1873" y="-1741">
-    <next>
-      <block type="movement_leftmotor" id="367" inline="true">
-        <value name="MOVLEFT">
-          <block type="math_number" id="383">
-            <field name="NUM">7</field>
+  <block type="controls_if" id="828" inline="false" x="-991" y="-607">
+    <mutation elseif="2"></mutation>
+    <value name="IF0">
+      <block type="sensor_spectrometer" id="821">
+        <field name="LIGHT">GREEN</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_forward" id="669"></block>
+    </statement>
+    <value name="IF1">
+      <block type="sensor_spectrometer" id="927">
+        <field name="LIGHT">YELLOW</field>
+      </block>
+    </value>
+    <statement name="DO1">
+      <block type="movement_setmotors" id="1067" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="1074">
+            <field name="NUM">-3</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="1091">
+            <field name="NUM">3</field>
           </block>
         </value>
       </block>
-    </next>
+    </statement>
+    <value name="IF2">
+      <block type="sensor_spectrometer" id="942">
+        <field name="LIGHT">RED</field>
+      </block>
+    </value>
+    <statement name="DO2">
+      <block type="movement_stop" id="966"></block>
+    </statement>
   </block>
 </xml>
