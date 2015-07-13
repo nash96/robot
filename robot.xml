@@ -3,11 +3,11 @@
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
       <block type="sensor_spectrometer" id="821">
-        <field name="LIGHT">GREEN</field>
+        <field name="LIGHT">RED</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="669"></block>
+      <block type="movement_stop" id="1108"></block>
     </statement>
   </block>
 </xml>
