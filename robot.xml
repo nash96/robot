@@ -15,20 +15,4 @@
       </block>
     </next>
   </block>
-  <block type="movement_leftmotor" id="204" inline="true" x="370" y="193">
-    <value name="MOVLEFT">
-      <block type="math_number" id="241">
-        <field name="NUM">500</field>
-      </block>
-    </value>
-    <next>
-      <block type="movement_rightmotor" id="261" inline="true">
-        <value name="MOVRIGHT">
-          <block type="math_number" id="268">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-      </block>
-    </next>
-  </block>
 </xml>
