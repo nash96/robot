@@ -2,12 +2,12 @@
   <block type="controls_if" id="828" inline="false" x="-991" y="-607">
     <mutation elseif="2"></mutation>
     <value name="IF0">
-      <block type="sensor_spectrometer" id="942">
-        <field name="LIGHT">RED</field>
+      <block type="sensor_spectrometer" id="821">
+        <field name="LIGHT">GREEN</field>
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_stop" id="966"></block>
+      <block type="movement_forward" id="669"></block>
     </statement>
     <value name="IF1">
       <block type="sensor_spectrometer" id="927">
@@ -29,12 +29,12 @@
       </block>
     </statement>
     <value name="IF2">
-      <block type="sensor_spectrometer" id="821">
-        <field name="LIGHT">GREEN</field>
+      <block type="sensor_spectrometer" id="942">
+        <field name="LIGHT">RED</field>
       </block>
     </value>
     <statement name="DO2">
-      <block type="movement_forward" id="669"></block>
+      <block type="movement_stop" id="966"></block>
     </statement>
   </block>
 </xml>
