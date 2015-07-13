@@ -7,6 +7,15 @@
             <field name="NUM">500</field>
           </block>
         </value>
+        <next>
+          <block type="movement_rightmotor" id="261" inline="true">
+            <value name="MOVRIGHT">
+              <block type="math_number" id="268">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </next>
   </block>
