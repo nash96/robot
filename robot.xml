@@ -1,13 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1098" inline="false" x="-913" y="-641">
-    <field name="MODE">UNTIL</field>
-    <value name="NUMBER">
-      <block type="sensor_spectrometer" id="821">
-        <field name="LIGHT">RED</field>
+  <block type="movement_forward" id="1119" x="-914" y="-661">
+    <next>
+      <block type="controls_whileUntil" id="1098" inline="false">
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="821">
+            <field name="LIGHT">RED</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_stop" id="1108"></block>
+        </statement>
       </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_stop" id="1108"></block>
-    </statement>
+    </next>
   </block>
 </xml>
